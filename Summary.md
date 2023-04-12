@@ -3,6 +3,16 @@
 Ruby : 2.6.6
 Rails: 6.0.3
 
+## rails command
+
+```
+rails -v
+
+rails _<RAILS_VERSION>_ -v
+
+rails _6.0.3_ new hello_rails
+```
+
 ## rake file
 
 ```
@@ -68,3 +78,18 @@ i.e. Employee model -> employees table name
 - `/employees` という URL は社員の一覧を返す
 
 - 社員 ID:1 の社員情報を表す URL は `/employees/1`
+
+## rails のディレクトリ
+
+| ファイル・ディレクトリ | 概要 |
+| -------- | ------- |
+| .ruby_version| rbenv などを使用している場合、このファイルに記載されたバージョンの Ruby を使用する |
+| Gemfile [ライブラリ名] |  プロジェクトで使用する gem ファイルを定義したファイル |
+| Gemfile .lock | Gemfile の依存関係を解決した結果を保存する |
+| app/ | 主なアプリケーションコードを記載するディレクトリ |
+| bin/ | Rails アプリケーションを開発するために利用する実行コマンドを格納しているディレクトリ|
+| config/ | アプリケーションの動作に関する設定ファイルを格納するディレクトリ|
+| db/ | DB に関する設定を格納するディレクトリ |
+| lib/ | Rake タスクなどアプリケーションから独立したコードを格納するディレクトリ |
+| public/| 静的コンテンツを配置するディレクトリ |
+| test/ | テストに関するソースコードをまとめるディレクトり |
